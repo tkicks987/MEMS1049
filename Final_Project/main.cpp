@@ -100,7 +100,7 @@ int main(void)
 				break;
 			}
 			
-		} //End difficulty loop
+		} //End repeat selection loop
 		
 		
 	} //End game loop
