@@ -47,8 +47,8 @@ int main(void)
 } // end main
 
 void initialize_usart(void) { // function to set up USART
-	UCSR0B = 0b00010000; //(1<<TXEN0); // enable serial transmission
-	UCSR0C = 0b00000110; //(1<<UCSZ01) | (1<<UCSZ00) ; // Asynchronous mode, 8‐bit
+	UCSR0B = (1<<TXEN0); // enable serial transmission
+	UCSR0C = (1<<UCSZ01) | (1<<UCSZ00) ; // Asynchronous mode, 8‐bit
 	// data; no parity; 1 stop bit
 	UBRR0L = 0x67; // 9,600 baud if Fosc = 16MHz
 }
